@@ -54,12 +54,5 @@ def main():
 
 
 if __name__ == '__main__':
-    # TODO: remove next line, being used for testing.
-    tb_queries.select_everything_query('recordtable')
-
     main()
-
-    # TODO: remove line below
-    tb_queries.select_everything_query('recordtable')
-
     conn.close()
