@@ -1,5 +1,5 @@
 import sqlite3
-import chainsaw_record_holders as ch
+import record_holders_main as ch
 import func_options as fu
 
 display_print = "Enter the full name of the record holder."
@@ -71,7 +71,7 @@ def add_new_record():
                 ch.conn.commit()
             except:
                 ch.conn.rollback()
-                print('A problem ocurred.')  # TODO:
+                print('A problem ocurred.')  
 
             print("Do you want to add more? 'yes' to continue, or press 'Enter' to exit:")
             yes_more = fu.user_input_yes_no()
@@ -95,7 +95,7 @@ def update_table():
                 print("Your name was not found, check spelling!")
                 continue
 
-            # Make suere user only select from one of the options provided.
+            # Once the id is retrieed, ask the user to selct an option.
             print("What would you like to UPDATE? \nEnter a number from one of the options below;")
             options = '1 : "name", \n2 : "country", \n3 : "catches", "\n0 : TO EXIT \nType a number:"'
             print(options)

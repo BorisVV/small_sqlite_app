@@ -1,5 +1,4 @@
 # Boris V
-'''module from the chainsaw record holder to verify user's input''''
 import re
 
 # This function returns the user input, boolean. It can be used for the while True loops.
